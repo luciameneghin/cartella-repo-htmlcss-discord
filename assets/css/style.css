@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0 auto;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* DEBUG */
+/* .debug {
+  background-color: rgba(255, 0, 0, .2);
+  border: 1px solid black;
+} */
+
+/* FINE DEBUG */
+/* inizio header */
+
+header main footer {
+  max-width: 98%;
+}
+
+.container {
+  max-width: 80%;
+  min-height: 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.bg-blue {
+  background-color: #3260E0
+}
+
+.bg-black {
+  background-color: #23272A;
+}
+
+.white-text {
+  color: white;
+}
+
+header .container .row {
+  display: flex;
+  min-height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col {
+  flex-wrap: wrap;
+  line-height: 65px;
+}
+
+header .container .row ul .navbar {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+header .row nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-weight: 550;
+}
+
+header .row #accedi a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  padding: 12px;
+  font-weight: 550;
+}
+
+header .container .row-text-box {
+  margin-top: 40px;
+  max-width: 100%;
+  text-align: center;
+  font-weight: 550;
+}
+
+header .container .row-text-box .col-text-box{
+  margin: 0 auto;
+  width: 50%;
+}
+
+header .container .row-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 160px;
+}
+
+header .container .row-buttons .buttons {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+header .container .row-buttons .buttons {
+  display: flex;
+  list-style: none;
+  font-weight: 550;
+}
+
+header .container .row-buttons .buttons a{
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+header .container .row-buttons .buttons .buttons-white a{
+  background-color: white;
+  color: black;
+  margin-right: 30px;
+}
+
+header .container .row-buttons .buttons .buttons-black a{
+  background-color: #23272A;
+  color: white;
+}
+
+
+/* fine header */
+/* inizio main */
+
+main .container .row {
+  max-width: 100%;
+  display: flex;
+  padding-bottom: 160px;
+}
+
+main .container .col-sessanta {
+  text-align: center;
+  margin-right: 50px;
+  width: 60%;
+}
+
+main .container .col-quaranta {
+  margin: 50px;
+  width: 40%;
+  font-size: 1.5rem;
+}
+
+main .container .row-tech {
+  text-align: center;
+}
+
+main .container .row-tech .testo,
+.img {
+  padding: 80px;
+  align-content: center;
+}
+
+main .container .row-tech .testo-cta {
+  align-content: center;
+  padding: 20px;
+  max-width: 100%;
+}
+
+main .container .row-cta {
+  max-width: 100%;
+  display: flex;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+main .container .row-cta .col-cta {
+  width: 40%;
+  padding: 40px;
+}
+
+main .container .row-cta .col-cta a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+main .container .row-cta .col-left,
+.col-right {
+  width: 20%;
+  padding: 40px;
+}
+
+/* FINE MAIN */
+/* INIZIO FOOTER */
+
+footer .container .row-foot-info {
+  display: flex;
+  max-width: 100%;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+footer .container .row-foot-info .col-foot {
+  width: 20%;
+  height: 200px; 
+  padding: 40px;
+}
+
+footer .container .row-foot-reg {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  text-align: center;
+}
+
+footer .row-foot-reg .col-foot a {
+  text-decoration: none;
+  padding: 40px;
+  text-decoration: none;
+}
