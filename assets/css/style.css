@@ -25,6 +25,7 @@ header main footer {
 .container {
   max-width: 70%;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .bg-blue {
@@ -73,19 +74,12 @@ header .row #accedi a {
   font-weight: 550;
 }
 
-
 header #jumbo {
   display: inline-block;
   background-image: url(../img/jumbo.png);
-  max-width: 100%;
-}
-/* header #jumbo {
-  display: inline-block;
-  background-image: url(../img/jumbo.png);
-  max-width: 98%;
-  padding: 800px;
+  background-size: cover;
   background-repeat: no-repeat;
-} */
+}
 
 header .row-text-box {
   display: flex;
@@ -144,9 +138,9 @@ main .container .row {
 }
 
 main .container .col-sessanta {
-  text-align: center;
   margin-right: 50px;
-  width: 60%;
+  padding-top: 20px;
+  max-width: 100%;
 }
 
 main .container .col-quaranta {
@@ -188,26 +182,26 @@ main .container .row-cta .col-cta a {
   border-radius: 20px;
 }
 
+main .container .row-cta .col-cta a:hover {
+  background-color: #536aaa;
+}
+
 /* FINE MAIN */
 /* INIZIO FOOTER */
+footer .row-foot {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
 
 footer .row-foot-info {
   display: flex;
-  max-width: 100%;
   margin-top: 70px;
   border-bottom: 1px solid white;
 }
 
-/* footer .row-foot-info #col-social {
-  display: flex
-} */
-footer .container .row-foot-info {
-  max-width: 100%;
-  text-align: center;
-}
-
-footer .container #col-social {
-  padding: 20px;
+footer .row-foot .row-foot-info .col-social .social-icon{
+ display: flex;
 }
 
 footer h3,h4{
@@ -215,33 +209,42 @@ footer h3,h4{
   padding: 10px;
 }
 
-footer .row-foot-info .col-foot ul{
-
-
-}
 
 footer .row-foot-info .col-foot ul li{
   list-style: none;
   padding: 10px;
 }
 
-footer .row-foot-info .col-foot .social-icon {
+footer .row-foot-info .social-icon a {
+  padding: 10px;
   color: white;
+  display: inline-block;
 }
 
-footer .row-foot-info .col-foot {
+footer .row-foot-info .col-foot,.col-reg {
   width: 20%;
-  height: 400px;
   padding: 40px;
-}
-
-footer .container .row-foot-reg {
-  display: flex;
+  display: inline-block;
   justify-content: space-between;
-  text-align: center;
 }
 
-footer .row-foot-reg .col-foot a {
-  text-decoration: none;
-  padding: 40px;
+
+
+
+footer .row-foot .row-foot-reg {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+footer .row-foot-reg .col-foot-reg a {
+  background-color: #7887d6;
+  text-decoration: none; 
+  padding: 20px;
+  border-radius: 20px;
+}
+
+footer .row-foot-reg .col-foot-reg a:hover {
+  background-color: #536aaa;
 }
