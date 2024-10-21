@@ -19,12 +19,11 @@ body {
 
 header main footer {
   max-width: 98%;
+  flex-wrap: wrap;
 }
 
 .container {
-  max-width: 80%;
-  min-height: 80px;
-  max-width: 1000px;
+  max-width: 70%;
   margin: 0 auto;
 }
 
@@ -40,6 +39,10 @@ header main footer {
   color: white;
 }
 
+a {
+  display: inline-block;
+}
+
 header .container .row {
   display: flex;
   min-height: 80px;
@@ -47,10 +50,6 @@ header .container .row {
   align-items: center;
 }
 
-.col {
-  flex-wrap: wrap;
-  line-height: 65px;
-}
 
 header .container .row ul .navbar {
   list-style: none;
@@ -74,50 +73,62 @@ header .row #accedi a {
   font-weight: 550;
 }
 
-header .container .row-text-box {
-  margin-top: 40px;
+
+header #jumbo {
+  display: inline-block;
+  background-image: url(../img/jumbo.png);
+  max-width: 100%;
+}
+/* header #jumbo {
+  display: inline-block;
+  background-image: url(../img/jumbo.png);
+  max-width: 98%;
+  padding: 800px;
+  background-repeat: no-repeat;
+} */
+
+header .row-text-box {
+  display: flex;
   max-width: 100%;
   text-align: center;
   font-weight: 550;
 }
 
-header .container .row-text-box .col-text-box{
+header .row-text-box .col-text-box {
   margin: 0 auto;
   width: 50%;
 }
 
-header .container .row-buttons {
-  display: flex;
+header .row-buttons {
   justify-content: center;
-  margin-bottom: 160px;
 }
 
-header .container .row-buttons .buttons {
-  display: inline-block;
+header .row-buttons .buttons {
   padding: 10px;
   margin-top: 30px;
   margin-bottom: 40px;
 }
 
-header .container .row-buttons .buttons {
+header .row-buttons .buttons {
   display: flex;
+  justify-content: center;
   list-style: none;
   font-weight: 550;
 }
 
-header .container .row-buttons .buttons a{
+header .row-buttons .buttons a {
   text-decoration: none;
   padding: 15px;
   border-radius: 20px;
 }
 
-header .container .row-buttons .buttons .buttons-white a{
+header .row-buttons .buttons .buttons-white a {
   background-color: white;
   color: black;
   margin-right: 30px;
 }
 
-header .container .row-buttons .buttons .buttons-black a{
+header .row-buttons .buttons .buttons-black a {
   background-color: #23272A;
   color: white;
 }
@@ -150,66 +161,87 @@ main .container .row-tech {
 
 main .container .row-tech .testo,
 .img {
-  padding: 80px;
   align-content: center;
+  font-weight: 550;
+  font-size: 1.2rem;
 }
 
 main .container .row-tech .testo-cta {
-  align-content: center;
-  padding: 20px;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 70px;
+  background-image: url(../img/stars.svg);
+  background-repeat: no-repeat;
   max-width: 100%;
-}
-
-main .container .row-cta {
-  max-width: 100%;
-  display: flex;
-  text-align: center;
-  margin-bottom: 120px;
 }
 
 main .container .row-cta .col-cta {
-  width: 40%;
-  padding: 40px;
+  text-align: center;
 }
 
 main .container .row-cta .col-cta a {
   text-decoration: none;
-  color: black;
+  color: white;
+  background-color: #8EA2E2;
   text-align: center;
-}
-
-main .container .row-cta .col-left,
-.col-right {
-  width: 20%;
-  padding: 40px;
+  padding: 15px;
+  border-radius: 20px;
 }
 
 /* FINE MAIN */
 /* INIZIO FOOTER */
 
-footer .container .row-foot-info {
+footer .row-foot-info {
   display: flex;
   max-width: 100%;
   margin-top: 70px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 
-footer .container .row-foot-info .col-foot {
+/* footer .row-foot-info #col-social {
+  display: flex
+} */
+footer .container .row-foot-info {
+  max-width: 100%;
+  text-align: center;
+}
+
+footer .container #col-social {
+  padding: 20px;
+}
+
+footer h3,h4{
+  color: #7887d6;
+  padding: 10px;
+}
+
+footer .row-foot-info .col-foot ul{
+
+
+}
+
+footer .row-foot-info .col-foot ul li{
+  list-style: none;
+  padding: 10px;
+}
+
+footer .row-foot-info .col-foot .social-icon {
+  color: white;
+}
+
+footer .row-foot-info .col-foot {
   width: 20%;
-  height: 200px; 
+  height: 400px;
   padding: 40px;
 }
 
 footer .container .row-foot-reg {
   display: flex;
   justify-content: space-between;
-  max-width: 100%;
   text-align: center;
 }
 
 footer .row-foot-reg .col-foot a {
   text-decoration: none;
   padding: 40px;
-  text-decoration: none;
 }
